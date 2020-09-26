@@ -23,12 +23,11 @@ class PersonService
         return $person;
     }
 
-    public function update(array $data)
+    public function update(Person $person, array $data)
     {
         DB::beginTransaction();
         try {
-            $person = new Person($data);
-            $person->save();
+            $person->update($data);
 
             DB::commit();
         } catch (\Exception $e) {
@@ -37,5 +36,18 @@ class PersonService
         }
 
         return $person;
+    }
+
+    public function delete(Person $person)
+    {
+        DB::beginTransaction();
+        try {
+            $person->delete();
+
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            throw $e;
+        }
     }
 }
