@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/opt/project/test1/tests" tests="4" assertions="4" errors="0" failures="2" skipped="0" time="0.005488">
-    <testsuite name="Test1\BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" tests="4" assertions="4" errors="0" failures="2" skipped="0" time="0.005488">
-      <testsuite name="Test1\BalancedBracketsTest::testValidBrackets" tests="4" assertions="4" errors="0" failures="2" skipped="0" time="0.005488">
-        <testcase name="testValidBrackets with data set #0" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.003344"/>
-        <testcase name="testValidBrackets with data set #1" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.000210"/>
-        <testcase name="testValidBrackets with data set #2" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.001406">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Test1\BalancedBracketsTest::testValidBrackets with data set #2 ('[]{()', false)
-Failed asserting that true matches expected false.
-
-/opt/project/test1/tests/BalancedBracketsTest.php:18
-</failure>
-        </testcase>
-        <testcase name="testValidBrackets with data set #3" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.000528">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Test1\BalancedBracketsTest::testValidBrackets with data set #3 ('[{)]', false)
-Failed asserting that true matches expected false.
-
-/opt/project/test1/tests/BalancedBracketsTest.php:18
-</failure>
-        </testcase>
+  <testsuite name="/opt/project/test1/tests" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.003619">
+    <testsuite name="Test1\BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.003619">
+      <testsuite name="Test1\BalancedBracketsTest::testValidBrackets" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.003619">
+        <testcase name="testValidBrackets with data set #0" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.002954"/>
+        <testcase name="testValidBrackets with data set #1" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.000293"/>
+        <testcase name="testValidBrackets with data set #2" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.000194"/>
+        <testcase name="testValidBrackets with data set #3" class="Test1\BalancedBracketsTest" classname="Test1.BalancedBracketsTest" file="/opt/project/test1/tests/BalancedBracketsTest.php" line="16" assertions="1" time="0.000178"/>
       </testsuite>
     </testsuite>
   </testsuite>
