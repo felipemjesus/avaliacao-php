@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/persons', 'PersonsController@index');
+Route::get('/persons/{id}', 'PersonsController@view');
 Route::post('/persons', 'PersonsController@create');
 Route::put('/persons/{id}', 'PersonsController@update');
 Route::delete('/persons/{id}', 'PersonsController@delete');
