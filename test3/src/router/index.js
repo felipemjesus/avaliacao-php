@@ -1,14 +1,21 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
 import PersonList from '../views/person/PersonList.vue';
+import PersonView from '../views/person/PersonView.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: PersonList,
+  },
+  {
+    path: '/person/:id',
+    name: 'person-view',
+    component: PersonView,
   },
 ];
 
