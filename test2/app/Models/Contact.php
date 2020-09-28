@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contact extends Model
 {
-    //
+    protected $table = 'contacts';
+    protected $fillable = ['type', 'description'];
+
+    public function person()
+    {
+        return $this->belongsTo(Person::class);
+    }
 }
