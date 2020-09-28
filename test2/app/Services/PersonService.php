@@ -66,8 +66,7 @@ class PersonService
     {
         DB::beginTransaction();
         try {
-            Contact::destroy($person->contacts());
-
+            $person->contacts()->delete();
             $person->delete();
 
             DB::commit();
