@@ -8,4 +8,8 @@ export default {
   get(id) {
     return ApiInstance.get(`persons/${id}`).then(response => response.data);
   },
+
+  create(person) {
+    return ApiInstance.post('persons', person).then(response => response.data);
+  }
 }
